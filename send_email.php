@@ -4,7 +4,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
+$email=$_GET['id'];
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
@@ -14,7 +14,8 @@ $mail = new PHPMailer(true);
 try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
-    //$mail->isSMTP();                                            // Send using SMTP
+    //$mail->isSMTP();
+    $mail->CharSet = 'utf-8';                                         // Send using SMTP
     $mail->Host = 'mail.websenso.net';                    // Set the SMTP server to send through
     $mail->SMTPAuth = true;                                   // Enable SMTP authentication
     $mail->Username = 'miw@websenso.net';                     // SMTP username
@@ -24,8 +25,8 @@ try {
 
     //Recipients
     $mail->setFrom('miw@websenso.net', 'MIW Party');
-    $mail->addAddress('james+miw@websenso.com', 'James');     // Add a recipient
-    $mail->addCC('miw@websenso.net');
+    $mail->addAddress($email);     // Add a recipient
+    //$mail->addCC('miw@websenso.net');
 
     // Attachments
 //    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
@@ -33,7 +34,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
+    $mail->Subject = 'Votre invitationt de star';
     $mail->Body = file_get_contents('email/email_party.html');
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

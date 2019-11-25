@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+main
+{
+    background-image: url("../img/font.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form
+{
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.email
+{
+    width: 80%;
+    height: 85px;
+    font-size: 1.5em;
+    padding:0 1em;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit
+{
+    background-color: #C30078;
+    color: white;
+    height: 85px;
+    width: 250px;
+    font-size: 1.5em;
+    display: block;
+    margin: 2rem auto;
+    background-image: url("../img/vip.png");
+    background-position-x: 190px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 0 30px;
+    border: none;
+
+}
+
+.valid
+{
+    width: 394px;
+    height: 266px;
+    background: #FFFFFF80 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 32px;
+    opacity: 1;
+    display: flex;
+
+
+
+}
+
+.valid_img
+{
+    width: 239px;
+    height: 194px;
+    background: transparent url('../img/valid.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0 auto;
+    background-size: contain;
+    align-self: center;
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .email
+    {
+        display: inline;
+        width: 50%;
+        margin: 0;
+
+    }
+    .submit
+    {
+        display: inline;
+        margin: 0;
+    }
+
+}
