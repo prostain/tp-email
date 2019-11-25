@@ -26,7 +26,7 @@ try {
     //Recipients
     $mail->setFrom('miw@websenso.net', 'MIW Party');
     $mail->addAddress($email);     // Add a recipient
-    //$mail->addCC('miw@websenso.net');
+    $mail->addCC('miw@websenso.net');
 
     // Attachments
 //    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
