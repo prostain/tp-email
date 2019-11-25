@@ -16,10 +16,10 @@ try {
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
     //$mail->isSMTP();
     $mail->CharSet = 'utf-8';                                         // Send using SMTP
-    $mail->Host = 'mail.websenso.net';                    // Set the SMTP server to send through
+    $mail->Host = 'la-host';                    // Set the SMTP server to send through
     $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-    $mail->Username = 'miw@websenso.net';                     // SMTP username
-    $mail->Password = '%)g@{Z>75[6N';                               // SMTP password
+    $mail->Username = 'username';                     // SMTP username
+    $mail->Password = 'password';                               // SMTP password
     //  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     //  $mail->Port       = 587;                                    // TCP port to connect to
 

@@ -14,3 +14,6 @@ Exo.
 Design form XD :  https://xd.adobe.com/view/6e443a70-4484-44e7-4638-8a584f571eb8-1875/
  
 TEST on your mobile, TEST on your device, TEST, TEST, TEST...  and Have fun !
+
+## 
+* modifier les paramètres de connection dans send_emaail.pxp
